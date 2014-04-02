@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10" 
-         android:text = "Matt"
+         android:text = ""
          android:singleLine = "true"
          android:maxLines = "1"
          android:lines = "1"/>
@@ -42,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10" 
-        android:text = "Matt"
+        android:text = ""
         android:singleLine = "true"
         android:maxLines = "1"
         android:lines = "1"/>
@@ -72,7 +72,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10" 
-        android:text = "154"         
+        android:text = ""         
         android:singleLine = "true"
        	android:maxLines = "1"
         android:lines = "1"/>
@@ -89,7 +89,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10" 
-        android:text = "154"
+        android:text = ""
         android:singleLine = "true"
         android:maxLines = "1"
         android:lines = "1"/>
@@ -106,7 +106,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10" 
-        android:text = "154"
+        android:text = ""
       	android:singleLine = "true"
         android:maxLines = "1"
         android:lines = "1"/>

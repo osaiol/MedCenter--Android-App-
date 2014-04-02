@@ -34,6 +34,7 @@ public class UserInfoActivity extends Activity {
     String patientUserName = "";
     boolean tetanus = false;
     boolean fluShot = false;
+    setTitle("Patient Information");
     
     if(UserInformation.userType.equals("Doctor"))
     {
@@ -175,11 +176,20 @@ public class UserInfoActivity extends Activity {
 	
 	
     if(tetanus){
-    	NotificationCompat.Builder mBuilder =
+    	NotificationCompat.Builder mBuilder;
+    	if(UserInformation.userType.equals("Doctor")||UserInformation.userType.equals("Nurse")){
+    	mBuilder =
     	        new NotificationCompat.Builder(this)
     	        .setSmallIcon(R.drawable.ic_launcher)
     	        .setContentTitle("MedCenter")
-    	        .setContentText("Come in for your Tetanus Vaccine!");
+    	        .setContentText(patientUserName+" requires their Tetanus Vaccine!");}
+    	
+    	else{mBuilder =
+    	        new NotificationCompat.Builder(this)
+    	        .setSmallIcon(R.drawable.ic_launcher)
+    	        .setContentTitle("MedCenter")
+    	        .setContentText("Come in for your Tetanus Vaccine!");}
+    	
     	// Creates an explicit intent for an Activity in your app
     	Intent resultIntent = new Intent(this, ScheduleActivity.class);
 
@@ -207,11 +217,20 @@ public class UserInfoActivity extends Activity {
     
 
     if(fluShot){
-    	NotificationCompat.Builder mBuilder =
+    	NotificationCompat.Builder mBuilder;
+    	if(UserInformation.userType.equals("Doctor")||UserInformation.userType.equals("Nurse")){
+    	mBuilder =
     	        new NotificationCompat.Builder(this)
     	        .setSmallIcon(R.drawable.ic_launcher)
     	        .setContentTitle("MedCenter")
-    	        .setContentText("Come in for your Flu Vaccine!");
+    	        .setContentText(patientUserName+" requires their Flu Vaccine!");}
+    	
+    	else{mBuilder =
+    	        new NotificationCompat.Builder(this)
+    	        .setSmallIcon(R.drawable.ic_launcher)
+    	        .setContentTitle("MedCenter")
+    	        .setContentText("Come in for your Flu Vaccine!");}
+    	
     	// Creates an explicit intent for an Activity in your app
     	Intent resultIntent = new Intent(this, ScheduleActivity.class);
 
